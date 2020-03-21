@@ -1,147 +1,147 @@
 * {
-    margin:0;
-    padding:0;
-    color:white;
-    box-sizing:border-box;
+  margin:0;
+  padding:0;
+  color:white;
+  box-sizing:border-box;
 }
 
 body {
-    font-family:"quicksand",sans-serif;
-    line-height:1.5;
-    background-image:linear-gradient(
-          rgba(0, 0, 0, 0.7), 
-          rgba(0, 0, 0, 0.7)),
-    url("https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?cs=srgb&dl=architecture-bridge-brooklyn-bridge-421927.jpg&fm=jpg");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    height:100%;
+  font-family:"quicksand",sans-serif;
+  line-height:1.5;
+  background-image:linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)),
+  url("https://images.pexels.com/photos/421927/pexels-photo-421927.jpeg?cs=srgb&dl=architecture-bridge-brooklyn-bridge-421927.jpg&fm=jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  height:100%;
 }
 
 header {
-    overflow:hidden;
-    padding:20px;
+  overflow:hidden;
+  padding:20px;
 }
 
 ul {
-    margin:0;
-    padding:0;
+  margin:0;
+  padding:0;
 }
 
 li {
-    display:inline;
+  display:inline;
 } 
 
 h1 {
-  margin:20px;
+margin:60px;
 }
 
 a {
-    color:white;
-    text-decoration:none;
-    padding:20px;
-    font-size:25px;
+  color:white;
+  text-decoration:none;
+  padding:20px;
+  font-size:25px;
 }
 
 img {
-  margin-top:7px;
+margin-top:7px;
 }
 
 #showcase {
-    margin-top:300px;
-    margin-left:50px;
+  margin-top:300px;
+  margin-left:50px;
 }
 
 .boxes {
-    display:flex;
-    margin-left:40px;
+  display:flex;
+  margin-left:40px;
 }
 
 #social {
-    margin-left:50px;
+  margin-left:50px;
 }
 
 .btn {
-    background:white;
-    color:black;
-    border:none;
-    width:100px;
-    height:35px;
-    border-radius:2px;
-    margin-left:10px;
+  background:white;
+  color:black;
+  border:none;
+  width:100px;
+  height:35px;
+  border-radius:2px;
+  margin-left:10px;
 }
 
 .btn:hover{
-    transition:0.6s;
-    background:grey;
-    color:white;
+  transition:0.6s;
+  background:grey;
+  color:white;
 }
 
 h1 {
-  margin-top:60px;
+margin-top:60px;
 }
 
 @media (max-width:700px){
-    h1 {
-        display:flex;
-        align-items:center;
-        text-align:center;
-    }
-  
-    #showcase {  
-        text-align:center;
-    }
-  
-    #showcase img {
-        margin:auto;
-    }
+  h1 {
+      display:flex;
+      align-items:center;
+      text-align:center;
+  }
+
+  #showcase {  
+      text-align:center;
+  }
+
+  #showcase img {
+      margin:auto;
+  }
 }
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+@media (max-width: 800px){
+#showcase h1 {
+  display:flex;
+  flex-direction:column;
+  padding:0 10px;
+}
+}
+
+@media (max-width: 800px){
+#showcase img {
+  display:flex;
+  flex-direction:column;
+  text-align:center;
+  justify-content:center;
+  align-items:center;
+}
+}
+
+@media (max-width: 800px) {
   .column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
-  }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-  }
-  
-@media (max-width: 800px){
-  #showcase h1 {
-    display:flex;
-    flex-direction:column;
-    padding:0 10px;
+    flex: 50%;
+    max-width: 50%;
   }
 }
 
-@media (max-width: 800px){
-  #showcase img {
-    display:flex;
-    flex-direction:column;
-    text-align:center;
-    justify-content:center;
-    align-items:center;
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
   }
 }
-
-  @media (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
